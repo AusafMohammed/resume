@@ -13,8 +13,8 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 20px auto;
+      max-width: 100%;
+      margin: 20px;
       padding: 20px;
       background-color: #fff;
       border-radius: 8px;
@@ -27,8 +27,9 @@
     }
 
     .profile img {
-      width: 300px;
-      height: 300px;
+      width: 50%; /* Adjust as needed */
+      max-width: 200px; /* Maximum width for smaller screens */
+      height: auto;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
@@ -53,33 +54,40 @@
       margin-bottom: 10px;
     }
 
-    .skills ul {
+    .skills ul, .soft-skills ul, .languages ul {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
     }
 
-    .skills li {
+    .skills li, .soft-skills li, .languages li {
       background-color: #f0f0f0;
       padding: 8px 12px;
       border-radius: 5px;
     }
 
-    .soft-skills ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
+    .education, .languages, .soft-skills {
+      margin-bottom: 20px;
     }
 
-    .soft-skills li {
-      background-color: #f0f0f0;
-      padding: 8px 12px;
+    .contact-info {
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      text-align: center;
+    }
+
+    .cta-button a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: 2px solid white;
       border-radius: 5px;
+      display: inline-block;
     }
-
-    
   </style>
 </head>
 <body>
@@ -88,16 +96,14 @@
   <div class="profile">
     <img src="Screenshot 2024-03-28 001723.png" alt="Your Name">
     <h1>Ausaf Mohammed</h1>
-    
     <p>I am a passionate and dedicated individual with a Bachelor's degree in Information Technology. I have a keen interest in Android development and have successfully completed several projects, including a fully-fledged chat application. Alongside Android development, I have skills in full-stack web development and I am actively learning DevOps practices.</p>
-    
   </div>
 
   <div class="education">
     <h2>Education</h2>
     <p>Btech in Information Technology</p>
     <ul>
-        <li>CGPA : 8.5</li>
+      <li>CGPA: 8.5</li>
       <li>Manipal Institute of Technology</li>
       <li>Manipal</li>
       <li>2025</li>
@@ -118,7 +124,6 @@
       <li>Data Structures and Algorithms</li>
       <li>Android studio</li>
       <li>Git</li>
-
       <!-- Add more skills as needed -->
     </ul>
   </div>
@@ -127,8 +132,7 @@
     <h2>Languages</h2>
     <ul>
       <li>English</li>
-      <li> Hindi</li>
-     
+      <li>Hindi</li>
       <!-- Add more languages as needed -->
     </ul>
   </div>
@@ -147,28 +151,18 @@
     </ul>
   </div>
 
-  <div class="education">
+  <div class="contact-info">
     <h2>Contact Information</h2>
-    <p>Phone Number : 9073547234</p>
+    <p>Phone Number: 8073547234</p>
     <ul>
-        <li>Email : ausaf2227@gmail.com</li>
-      <li>Github link : https://github.com/papajones786</li>
-      
-      
+      <li>Email: ausaf2227@gmail.com</li>
+      <li>Github link: <a href="https://github.com/papajones786">https://github.com/papajones786</a></li>
     </ul>
   </div>
-  <div style=" display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  width: 100vh;">
-  <a href="project.html" style="text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 10px 20px;
-  border: 2px solid white;
-  border-radius: 5px;">CLICK HERE TO VIEW PROJECTS</a>
-</div>
+
+  <div class="cta-button">
+    <a href="project.html">CLICK HERE TO VIEW PROJECTS</a>
+  </div>
 </div>
 
 </body>
